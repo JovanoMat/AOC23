@@ -39,11 +39,39 @@ nums = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
 totalSum = 0;
 for code in codes2:
-    new_code = ""
-    if "one" in code:
-        new_code = code.replace("one", "1")
-        print(new_code)
-        
+    new_code = code
+    while True: 
+        if "one" in new_code:
+            new_code = new_code.replace("one", "1")
+
+        if "two" in new_code:
+            new_code = new_code.replace("two", "2")
+
+        if "three" in new_code:
+            new_code = new_code.replace("three", "3")
+
+        if "four" in new_code:
+            new_code = new_code.replace("four", "4")
+
+        if "five" in new_code:
+            new_code = new_code.replace("five", "5")
+
+        if "six" in new_code:
+            new_code = new_code.replace("six", "6")
+
+        if "seven" in new_code:
+            new_code = new_code.replace("seven", "7")
+
+        if "eight" in new_code:
+            new_code = new_code.replace("eight", "8")
+
+        if "nine" in new_code:
+            new_code = new_code.replace("nine", "9")
+            
+        else:
+            break
+
+    print(new_code)
 
 
     # for char in code:
